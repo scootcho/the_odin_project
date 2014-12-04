@@ -4,19 +4,22 @@
 //What is the largest prime factor of the number 600851475143 ?
 
 
-ill come back to finish this lesson!!
-var input = 600851475143;
+var factor = 2;
 
-var x = new Array();
-var i = 0;
+function LargestPrime(number) {
+        while(number != factor) {
+            if (number % factor === 0) {
+                number = number / factor;
+            } else {factor += 1}
+        }
+        
+//        console.log(factor);
 
-for ( var i = 0; i < input; i++){
-	if (input % i === 0 ){
-		x.push(i);
-	}
+        function writePrime(factor) {
+            return factor;
+        }
+        
+        console.log(writePrime(factor))
+
 }
-
-
-will come back to finish this lesson!!
-
-console.log(x[-1]);
+LargestPrime(600851475143);
