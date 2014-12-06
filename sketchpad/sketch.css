@@ -1,15 +1,17 @@
 .square {
-  width: 60px;
-  height: 60px;
+  background-color: #E8E8E8;
+  opacity: 1;
   display: inline-block;
+  float: left;
 }
-.grid {
-  max-width: 960px;
-  height: 960;
+
+#gridwrapper{
+  width:100%;
+}
+
+#grid {
+	margin: 0 auto;
+  width: 600px;
+  height: 400px;
   background-color:#E8E8E8;
-  margin: 0 auto;
-  line-height: 0;
-}
-.ink {
-  background-color: #000;
 }
