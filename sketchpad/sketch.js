@@ -99,6 +99,23 @@ var Randrgb = function () {
 };
 
 
+//Shader Etch
+var shader = function(){
+  $('#gradient').on('click', function(){
+    screenReset();
+    $('.square').css("background-color", "#000");
+    $('.square').css("opacity", 0);
+    $('.square').on('mouseover', function(){
+      var value = +$(this).css("opacity");
+      if( value < 1 ){
+          value += 0.1;
+          $(this).css("opacity", value);
+      };
+    });
+  });
+};
+
+
 //Clear button - Calling screenReset
 var clearScreen = function() {
   $('#clear').click(function() {
