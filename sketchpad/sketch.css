@@ -5,6 +5,27 @@
   float: left;
 }
 
+#etchmachine{
+  margin: 0 auto;
+  width: 800px;
+  height: auto;
+  padding-bottom:30px;
+  background-color:#cc0000;
+  border-radius:1em;
+}
+
+#etchmachine p{
+  text-align:center;
+  padding:1em 0em;
+  color:#000;
+}
+
+#rightnob{
+  background-color:#fff;
+  width:50px;
+  border-radius:20px;
+}
+
 #gridwrapper{
   width:100%;
 }
@@ -14,4 +35,24 @@
   width: 600px;
   height: 400px;
   background-color:#E8E8E8;
+}
+
+button{
+  border:none;
+  margin:0.5em 1em;
+  padding:0.5em;
+  border-radius:0.2em;
+  line-height:1;
+  display:inline-block;
+}
+
+button:hover{
+  background-color: #6699FF;
+}
+
+#buttonrow{
+  text-align:center;
+}
+#optionrow{
+  text-align:center;
 }
