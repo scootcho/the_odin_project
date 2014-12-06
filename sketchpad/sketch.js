@@ -116,6 +116,20 @@ var shader = function(){
 };
 
 
+//Trailing Etch
+var trailing = function(){
+  $('#trail').on('click', function(){
+    screenReset();
+    $('.square').on('mouseenter', function(){
+      $(this).css("background-color", "#000")
+    });
+    $('.square').on('mouseleave', function(){
+      $(this).fadeTo(600,0);
+    });
+  });
+};
+
+
 //Clear button - Calling screenReset
 var clearScreen = function() {
   $('#clear').click(function() {
