@@ -90,37 +90,6 @@ var color = function(){
 };
 
 
-//Shader Etch
-var shader = function(){
-  $('#gradient').on('click', function(){
-    screenReset();
-    $('.square').css("background-color", "#000");
-    $('.square').css("opacity", 0);
-    $('.square').on('mouseover', function(){
-      var value = +$(this).css("opacity");
-      if( value < 1 ){
-          value += 0.1;
-          $(this).css("opacity", value);
-      };
-    });
-  });
-};
-
-
-//Trailing Etch
-var trailing = function(){
-  $('#trail').on('click', function(){
-    screenReset();
-    $('.square').on('mouseenter', function(){
-      $(this).css("background-color", "#000")
-    });
-    $('.square').on('mouseleave', function(){
-      $(this).fadeTo(600,0);
-    });
-  });
-};
-
-
 //Random RGB Generator
 var Randrgb = function () {
 	var red= Math.floor((Math.random()*255));
