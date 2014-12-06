@@ -62,6 +62,24 @@ var largesq = function(){
 };
 
 
+//Default Etch-A-Sketch
+var defaultetch = function(){
+  $('#default').on('click', function(){
+    screenReset();
+    etch();
+  });
+}
+
+
+//Black Etch
+var etch = function(){
+  $('.square').on('mouseover', function(){
+    $(this).css("background-color", "#000");
+  });
+};
+
+
+
 //Clear button - Calling screenReset
 var clearScreen = function() {
   $('#clear').click(function() {
