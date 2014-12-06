@@ -30,3 +30,48 @@ var buildGrid = function(x) {
   $('.square').width(squareSize);
   $('.square').height(squareSize);
 };
+
+
+//Small Squares
+var smallsq = function(){
+  $('#small').on('click', function(){
+    screenReset();
+    buildGrid(small);
+    etch();
+  });
+};
+
+
+//Medium Squares
+var mediumsq = function(){
+  $('#medium').on('click', function(){
+    buildGrid(medium);
+    screenReset();
+    etch();
+  });
+};
+
+
+//large Squares
+var largesq = function(){
+  $('#large').on('click', function(){
+    screenReset();
+    buildGrid(large);
+    etch();
+  });
+};
+
+
+//Clear button - Calling screenReset
+var clearScreen = function() {
+  $('#clear').click(function() {
+    screenReset();
+  });
+};
+
+
+//Unbind & Reset
+var screenReset = function(){
+   $('.square').unbind();
+   $('.square').css({"background-color": "#E8E8E8", "opacity": "1"});
+};
