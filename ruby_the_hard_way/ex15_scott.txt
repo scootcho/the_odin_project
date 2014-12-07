@@ -1,3 +1,0 @@
-This is a separate file that Scott created.
-This file is awesome too!
-Because it reads better!
