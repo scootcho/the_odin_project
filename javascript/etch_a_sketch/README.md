@@ -1,5 +1,7 @@
 Javascript Sketchpad Project
 =============
+[open in browser](http://htmlpreview.github.io/?https://github.com/scootcho/the_odin_project/blob/master/javascript/etch_a_sketch/index.html)
+
 
 Javascript project via The Odin Project [source] (http://www.theodinproject.com/web-development-101/javascript-and-jquery)
 
